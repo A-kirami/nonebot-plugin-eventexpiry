@@ -1,6 +1,6 @@
 [project]
 name = "nonebot-plugin-eventexpiry"
-version = "0.1.0"
+version = "0.1.1"
 description = "NoneBot2 event expiry filter"
 authors = [
     {name = "Akirami", email = "Akiramiaya@outlook.com"},
