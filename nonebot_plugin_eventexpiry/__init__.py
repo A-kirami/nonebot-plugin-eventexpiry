@@ -21,7 +21,7 @@ __plugin_meta__ = PluginMetadata(
     type="library",
     homepage="https://github.com/A-kirami/nonebot-plugin-eventexpiry",
     config=Config,
-    supported_adapters={"~.onebot.v11", "~.onebot.v12"},
+    supported_adapters={"~onebot.v11", "~onebot.v12"},
 )
 
 driver = get_driver()
