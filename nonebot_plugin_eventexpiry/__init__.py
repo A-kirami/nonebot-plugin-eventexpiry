@@ -1,7 +1,7 @@
 import time
 from typing import Union
 
-from nonebot import get_driver
+from nonebot import get_plugin_config
 from nonebot.adapters.onebot.v11 import Event as v11Event
 from nonebot.adapters.onebot.v12 import Event as v12Event
 from nonebot.exception import IgnoredException
@@ -24,9 +24,7 @@ __plugin_meta__ = PluginMetadata(
     supported_adapters={"~onebot.v11", "~onebot.v12"},
 )
 
-driver = get_driver()
-
-config = Config.parse_obj(driver.config)
+config = get_plugin_config(Config)
 
 
 @event_preprocessor
